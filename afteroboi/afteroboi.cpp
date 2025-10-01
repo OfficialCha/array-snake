@@ -117,11 +117,11 @@ void saveToFile(int* matrix, int n)
             file << endl;
         }
         file.close();
-        cout << "Ìàññèâ ñîõðàíåí â ôàéë output.txt\n";
+        cout << "ÐœÐ°ÑÑÐ¸Ð² ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½ Ð² Ñ„Ð°Ð¹Ð» output.txt\n";
     }
     else
     {
-        cout << "Îøèáêà îòêðûòèÿ ôàéëà!\n";
+        cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ñ Ñ„Ð°Ð¹Ð»Ð°!\n";
     }
 }
 
@@ -130,28 +130,28 @@ int main()
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
     int n;
-    cout << "Ââåäèòå ÷èñëî N: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ N: ";
     cin >> n;
     if (n > 300)
     {
-        cout << endl << "ÍÅÒ!";
+        cout << endl << "ÐÐ•Ð¢!";
         return 0;
     }
 
     int corner;
-    cout << "Âûáåðèòå íà÷àëüíûé óãîë:\n";
-    cout << "1 - Âåðõíèé ëåâûé\n";
-    cout << "2 - Âåðõíèé ïðàâûé\n";
-    cout << "3 - Íèæíèé ëåâûé\n";
-    cout << "4 - Íèæíèé ïðàâûé\n";
-    cout << "Âàø âûáîð: ";
+    cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑƒÐ³Ð¾Ð»:\n";
+    cout << "1 - Ð’ÐµÑ€Ñ…Ð½Ð¸Ð¹ Ð»ÐµÐ²Ñ‹Ð¹\n";
+    cout << "2 - Ð’ÐµÑ€Ñ…Ð½Ð¸Ð¹ Ð¿Ñ€Ð°Ð²Ñ‹Ð¹\n";
+    cout << "3 - ÐÐ¸Ð¶Ð½Ð¸Ð¹ Ð»ÐµÐ²Ñ‹Ð¹\n";
+    cout << "4 - ÐÐ¸Ð¶Ð½Ð¸Ð¹ Ð¿Ñ€Ð°Ð²Ñ‹Ð¹\n";
+    cout << "Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
     cin >> corner;
 
     int* matrix = new int[n * n];
 
     fillArray(matrix, n, corner);
 
-    cout << "\nÏîëó÷åííàÿ ìàòðèöà:" << endl;
+    cout << "\nÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ð°Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð°:" << endl;
     printMatrix(matrix, n);
 
     saveToFile(matrix, n);
