@@ -11,7 +11,7 @@ void fillArray(int* matrix, int n, int corner)
     {
         switch (corner)
         {
-        case 1: // Верхний левый
+        case 1: // top-left
             if (diag % 2 == 0)
             {
                 for (int i = 0; i <= diag; i++)
@@ -30,7 +30,7 @@ void fillArray(int* matrix, int n, int corner)
             }
             break;
 
-        case 2: // Верхний правый
+        case 2: // top-right
             if (diag % 2 == 0)
             {
                 for (int i = 0; i <= diag; i++)
@@ -49,7 +49,7 @@ void fillArray(int* matrix, int n, int corner)
             }
             break;
 
-        case 3: // Нижний левый
+        case 3: // bot-left
             if (diag % 2 == 0)
             {
                 for (int i = 0; i <= diag; i++)
@@ -68,7 +68,7 @@ void fillArray(int* matrix, int n, int corner)
             }
             break;
 
-        case 4: // Нижний правый
+        case 4: // bot-right
             if (diag % 2 == 0)
             {
                 for (int i = 0; i <= diag; i++)
