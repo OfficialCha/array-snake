@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <Windows.h>
+
 using namespace std;
 
 void fillArray(int* matrix, int n, int corner)
@@ -133,7 +134,7 @@ int main()
     cin >> n;
     if (n > 300)
     {
-        cout << endl << "мер";
+        cout << endl << "мер!";
         return 0;
     }
 
