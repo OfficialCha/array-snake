@@ -151,7 +151,7 @@ int main()
 
     fillArray(matrix, n, corner);
 
-    cout << "\nПолученная матрица:\n";
+    cout << "\nПолученная матрица:" << endl;
     printMatrix(matrix, n);
 
     saveToFile(matrix, n);
