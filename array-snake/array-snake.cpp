@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <fstream>
 #include <Windows.h>
 #include <cstdlib>
@@ -161,5 +161,6 @@ int main()
     saveToFile(matrix, n);
 
     delete[] matrix;
+    system("pause");
     return 0;
 }
