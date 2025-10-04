@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <Windows.h>
+#include <cstdlib>
 
 using namespace std;
 
@@ -135,6 +136,7 @@ int main()
     if (n > 300)
     {
         cout << endl << "НЕТ!";
+        system("pause")
         return 0;
     }
 
